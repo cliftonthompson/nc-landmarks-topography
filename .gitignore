@@ -1,0 +1,14 @@
+﻿# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Local data caches and outputs
+*.tif
+*.tiff
+data/raw/
+cache/
+.DS_Store
+
+.vs/
+.venv/
