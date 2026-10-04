@@ -1,0 +1,182 @@
+%! TEX program = pdflatex
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+
+% Command Palette Color Specifications
+\definecolor{CommandNavy}{HTML}{0D2A47}
+\definecolor{CharcoalSlate}{HTML}{343A40}
+\definecolor{ValorRed}{HTML}{B82A3A}
+\definecolor{CadetGreen}{HTML}{5A7067}
+\definecolor{AviationGray}{HTML}{F1F3F5}
+
+% Hyperref and PDF Metadata Configuration
+\hypersetup{
+    colorlinks=true,
+    linkcolor=CommandNavy,
+    citecolor=CadetGreen,
+    urlcolor=ValorRed,
+    pdftitle={The North Carolina Project: Reconstructing the 100-County Scrapbook as a 3D Topographic Model},
+    pdfauthor={Clifton N. Thompson},
+    pdfsubject={Geospatial Analytics, Physical Relief Modeling, and NC Heritage},
+    pdfkeywords={North Carolina, Topography, MapLibre, GIS, Wikidata, SPARQL, Our State}
+}
+
+% Header and Footer Formatting
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{CharcoalSlate}{\footnotesize The North Carolina Project: 3D Relief Visual}}
+\lhead{\textcolor{CharcoalSlate}{\footnotesize C. N. Thompson}}
+\cfoot{\textcolor{CharcoalSlate}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section Heading Styling
+\titleformat{\section}
+  {\color{CommandNavy}\normalfont\Large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}
+  {\color{CadetGreen}\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\color{CharcoalSlate}\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    
+    {\Huge \bfseries \color{CommandNavy} The North Carolina Project}\\[0.4cm]
+    {\Large \itshape \color{CharcoalSlate} Modernizing the 100-County State History Scrapbook\\into a 3D Raised Topographic Model}\\[1.5cm]
+    
+    \textbf{\large Clifton N. Thompson}\\[0.2cm]
+    \textcolor{CharcoalSlate}{\normalsize Senior Facility Maintenance Program Coordinator \& CMMS Administrator}\\[0.1cm]
+    \textcolor{CadetGreen}{\normalsize Data Analytics Program, Southern New Hampshire University}\\[2.0cm]
+
+    \begin{abstract}
+    \noindent For generations of North Carolina public school students, the ``North Carolina Project'' was an exhaustive, tactile educational crucible. Bound within red three-ring vinyl binders, students cataloged all one hundred counties across the state's three physiographic divisions---the Mountains, the Piedmont, and the Coastal Plain. This paper documents the architecture, cartographic theory, and geospatial engineering required to transform that nostalgic schoolhouse artifact into a hardware-accelerated, true-scale 3D raised relief model. Combining authoritative US Census TIGER boundary geometries, AWS Terrarium Digital Elevation Models (DEMs), Wikidata SPARQL semantic triples, and Wikimedia pageview metrics, the resulting system isolates North Carolina as a physical, thermoformed gallery model rendered directly in WebGL.
+    \end{abstract}
+
+    \vfill
+    {\footnotesize \color{CharcoalSlate} Compiled on \today \quad | \quad Savannah, Georgia}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction: The Red Binder Heritage}
+
+During the latter half of the twentieth century, North Carolina public education maintained a distinctive rite of passage: the eighth-grade state history compendium, known colloquially across school districts as ``The North Carolina Project.'' As chronicled by \emph{Our State} magazine, this curriculum assignment transcended simple textbook review. Students were required to construct an all-inclusive compendium of the Old North State, traditionally housed in a heavy, red three-ring plastic binder.
+
+The assignment demanded exhaustive documentation across all 100 counties and the state's three physiographic divisions:
+\begin{enumerate}
+    \item \textbf{The Mountain Region:} Covering the Blue Ridge, the Great Smokies, the Eastern Continental Divide, and timber resources from Ashe County to Cherokee County.
+    \item \textbf{The Piedmont Crescent:} Documenting the fall line, early manufacturing along the textile and tobacco corridors, and the seat of state governance.
+    \item \textbf{The Coastal Plain:} Cataloging the tidewater sounds, the barrier sand spits of the Outer Banks, lighthouses, and naval history.
+\end{enumerate}
+
+To fulfill the rigorous rubrics, students collected travel brochures by writing physical letters to local Chambers of Commerce, pressed dogwood leaves and dried tobacco foliage between wax paper, taped baggies of Atlantic sand from Cape Hatteras, and pasted photographs from family road trips along the Blue Ridge Parkway and US-64. Decades later, these binders remain preserved in attics and footlockers as tactile monuments to personal and state identity.
+
+This project recreates that legacy in a contemporary technical medium. By synthesizing 3D digital elevation models with semantic graph queries and historical web traffic, we translate the tactile scrapbook into an interactive, hardware-accelerated physical relief display.
+
+\section{System Architecture and Data Pipeline}
+
+The architecture decouples data ingestion, geometric clipping, and client-side 3D WebGL rendering into four distinct modules:
+
+\begin{equation}
+\mathcal{P} = \Big( \mathcal{Q}_{\text{SPARQL}} \oplus \mathcal{A}_{\text{Wikimedia}} \Big) \xrightarrow{\text{Join}} \mathcal{G}_{\text{GeoJSON}} \xrightarrow{\text{Clip}} \mathcal{M}_{\text{MapLibre-3D}}
+\end{equation}
+
+\subsection{Semantic Ingestion via SPARQL and Wikimedia API}
+State landmarks are queried from Wikidata using a non-transitive administrative hierarchy filter targeting North Carolina ($\mathrm{wd{:}Q1454}$) and its constituent counties. To eliminate low-significance cadastral markers, candidate entities are filtered by explicit ontology classes: historic sites ($\mathrm{wd{:}Q1081138}$), state parks ($\mathrm{wd{:}Q179049}$), national parks ($\mathrm{wd{:}Q46169}$), museums ($\mathrm{wd{:}Q33506}$), and lighthouses ($\mathrm{wd{:}Q39715}$).
+
+Each entity's linked English Wikipedia sitelink is extracted and percent-encoded to preserve title syntax (including parenthetical disambiguations). Annual pageviews are ingested via the Wikimedia REST API across a 12-month calendar baseline ($T_{2025}$):
+
+\begin{equation}
+V_{\text{annual}} = \sum_{m=1}^{12} v_m(a_i)
+\end{equation}
+
+\noindent where $v_m(a_i)$ represents the monthly agent-filtered pageviews for landmark article $a_i$.
+
+\subsection{Topographic Hypsometry and Vertical Exaggeration}
+True physical relief models (such as thermoformed PVC maps by Hubbard or WhiteClouds CNC millings) utilize vertical exaggeration to make macro-topography discernible over wide horizontal extents. North Carolina spans approximately 503 miles ($810\text{ km}$) east-to-west, while Mount Mitchell peaks at 6,684 feet ($2.037\text{ km}$) above sea level. An unscaled 1:1 relief map produces an elevation-to-width ratio of:
+
+\begin{equation}
+R = \frac{2.037\text{ km}}{810\text{ km}} \approx 0.0025
+\end{equation}
+
+At this proportion, the Appalachian chain appears as imperceptible micro-texture. To replicate the tactile feel of physical relief, the elevation mesh is rendered using AWS Open Data Terrarium RGB-DEM raster tiles with a vertical exaggeration factor of:
+
+\begin{equation}
+h_{\text{render}}(x, z) = 3.6 \times h_{\text{true}}(x, z)
+\end{equation}
+
+Elevation tints are mapped via OpenTopo hypsometric color ramps: marine blues along the Atlantic shelf, lush greens across the tidewater plain, golden ochres through the Piedmont plateau, and terracotta browns along the Blue Ridge Escarpment.
+
+\subsection{Boundary Dissolve and Marine Shelf Inverted Mask}
+To replicate an isolated museum model floating on an obsidian base, all surrounding terrain (Virginia, Tennessee, Georgia, South Carolina, and open ocean) is masked out. National-scale boundary shapefiles frequently drop barrier islands, omitting Dare and Currituck counties. 
+
+The pipeline ingests all 100 individual Census county polygons ($\mathrm{FIPS\ 37XXX}$) and computes a unified geometric union:
+
+\begin{equation}
+\mathcal{B}_{\text{NC}} = \bigcup_{i=1}^{100} C_i
+\end{equation}
+
+A coastal marine buffer $\mathcal{S}_{\text{shelf}}$ is unioned to $\mathcal{B}_{\text{NC}}$ extending eastward to $-75.0^\circ\mathrm{W}$ to protect the barrier island system from clipping:
+
+\begin{equation}
+\mathcal{M}_{\text{mask}} = \mathcal{W}_{\text{global}} \setminus \Big( \mathcal{B}_{\text{NC}} \cup \mathcal{S}_{\text{shelf}} \Big)
+\end{equation}
+
+\section{Analysis of the Topographic Landscape}
+
+The completed visualization catalogs 120 verified state landmarks. Table~\ref{tab:top_landmarks} summarizes the top ten state landmarks by annual Wikipedia engagement, demonstrating the cultural weight of both mountain historic sites and coastal navigation sentinels.
+
+\begin{table}[h]
+\centering
+\small
+\color{CharcoalSlate}
+\caption{Top North Carolina Landmarks by Annual Wikipedia Visibility}
+\label{tab:top_landmarks}
+\vspace{0.2cm}
+\begin{tabularx}{\textwidth}{r l l l r}
+\toprule
+\textbf{Rank} & \textbf{Landmark Name} & \textbf{Classification} & \textbf{Physiographic Region} & \textbf{Annual Views} \\
+\midrule
+1 & Tryon Palace & Archaeology / Historic & Coastal Plain & 23,380 \\
+2 & Billy Graham Library & Museum & Piedmont & 16,984 \\
+3 & Discovery Place & Museum & Piedmont & 14,210 \\
+4 & Joara Archaeological Site & Archaeology & Mountain & 13,330 \\
+5 & Currituck Beach Lighthouse & Lighthouse & Coastal Plain & 11,249 \\
+6 & Ava Gardner Museum & Museum & Coastal Plain & 10,231 \\
+7 & Graveyard of the Atlantic Museum & Museum & Coastal Plain & 8,147 \\
+8 & Hardaway Site & Archaeology & Piedmont & 7,016 \\
+9 & Ackland Art Museum & Museum & Piedmont & 5,991 \\
+10 & Fort Neoheroka & Archaeology & Coastal Plain & 4,515 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Conclusion}
+
+The modernized North Carolina 3D Topographic Project bridges personal regional heritage with rigorous spatial data engineering. By moving from the construction paper and Elmer's glue of the eighth-grade red binder to WebGL raster-DEM tessellation and SPARQL graph extraction, the project preserves the spirit of state exploration while demonstrating scalable, publication-grade analytical visualization.
+
+\begin{thebibliography}{9}
+\bibitem{ourstate}
+\emph{Our State Magazine}, ``How the North Carolina Project Began,'' State History \& Heritage Series.
+\bibitem{census}
+US Census Bureau, \emph{Cartographic Boundary Files: North Carolina County Polygons (500k)}, Geography Division.
+\bibitem{wikidata}
+Wikidata contributors, \emph{SPARQL Query Service and Administrative Entity Hierarchy for North Carolina (Q1454)}, Wikimedia Foundation.
+\end{thebibliography}
+
+\end{document}

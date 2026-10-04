@@ -1,0 +1,93 @@
+qid,name,category,lat,lon,article_url,annual_views,region,rank
+Q464004,Great Smoky Mountains National Park,national park,35.611111111,-83.425,https://en.wikipedia.org/wiki/Great_Smoky_Mountains_National_Park,185898,Mountain,1
+Q2508238,Cape Hatteras Lighthouse,lighthouse,35.250555555,-75.528805555,https://en.wikipedia.org/wiki/Cape_Hatteras_Lighthouse,51732,Coastal Plain,2
+Q6302064,Judaculla Rock,archaeological site,35.301,-83.1099,https://en.wikipedia.org/wiki/Judaculla_Rock,39685,Mountain,3
+Q3331450,Tryon Palace,archaeological site,35.105805555,-77.044305555,https://en.wikipedia.org/wiki/Tryon_Palace,23380,Coastal Plain,4
+Q2896339,Bennett Place State Historic Site,historic site,36.029167,-78.975556,https://en.wikipedia.org/wiki/Bennett_Place,23267,Piedmont,5
+Q1459878,Q1459878,museum,35.81019444,-78.70288889,https://en.wikipedia.org/wiki/North_Carolina_Museum_of_Art,21769,Piedmont,6
+Q4286384,Bodie Island Light,lighthouse,35.8185,-75.5633,https://en.wikipedia.org/wiki/Bodie_Island_Lighthouse,19338,Coastal Plain,7
+Q4912629,Billy Graham Library,museum,35.1905516,-80.9093017,https://en.wikipedia.org/wiki/Billy_Graham_Library,16984,Piedmont,8
+Q4286379,Cape Lookout Lighthouse,lighthouse,34.622738,-76.524546,https://en.wikipedia.org/wiki/Cape_Lookout_Lighthouse,14253,Coastal Plain,9
+Q5281960,Discovery Place,museum,35.2294,-80.8408,https://en.wikipedia.org/wiki/Discovery_Place,14210,Piedmont,10
+Q3808596,Joara,archaeological site,35.7959,-81.717,https://en.wikipedia.org/wiki/Joara,13330,Mountain,11
+Q14708039,Moores Creek National Battlefield,archaeological site,34.458222222,-78.110305555,https://en.wikipedia.org/wiki/Moores_Creek_National_Battlefield,12951,Coastal Plain,12
+Q4979552,Brunswick Town,archaeological site,34.039823,-77.946582,"https://en.wikipedia.org/wiki/Brunswick_Town,_North_Carolina",12911,Coastal Plain,13
+Q4452751,Town Creek Indian Mound,archaeological site,35.1828,-79.9295,https://en.wikipedia.org/wiki/Town_Creek_Indian_Mound,11661,Piedmont,14
+Q3308122,Currituck Beach Lighthouse,lighthouse,36.376667,-75.830833,https://en.wikipedia.org/wiki/Currituck_Beach_Light,11249,Coastal Plain,15
+Q3194647,Kituwa,archaeological site,35.4333,-83.4333,https://en.wikipedia.org/wiki/Kituwa,10991,Mountain,16
+Q7054557,North Carolina Museum of History,museum,35.7815,-78.6385,https://en.wikipedia.org/wiki/North_Carolina_Museum_of_History,10824,Piedmont,17
+Q4827382,Ava Gardner Museum,museum,35.5109,-78.3451,https://en.wikipedia.org/wiki/Ava_Gardner_Museum,10231,Coastal Plain,18
+Q7596975,Stagville,archaeological site,36.116933,-78.837781,https://en.wikipedia.org/wiki/Stagville,9540,Piedmont,19
+Q4286356,Bald Head Lighthouse,lighthouse,33.873472,-78.000278,https://en.wikipedia.org/wiki/Bald_Head_Light,8765,Coastal Plain,20
+Q6915797,Moses H. Cone Memorial Park,museum,36.1496,-81.6923,https://en.wikipedia.org/wiki/Moses_H._Cone_Memorial_Park,8365,Mountain,21
+Q5597963,Graveyard of the Atlantic Museum,museum,35.2063,-75.704,https://en.wikipedia.org/wiki/Graveyard_of_the_Atlantic_Museum,8147,Coastal Plain,22
+Q7036744,Nikwasi,archaeological site,35.1833,-83.3667,https://en.wikipedia.org/wiki/Nikwasi,7599,Mountain,23
+Q4286387,Oak Island Light,lighthouse,33.8929,-78.035,https://en.wikipedia.org/wiki/Oak_Island_Light,7458,Coastal Plain,24
+Q4760745,Andy Griffith Museum,museum,36.4978,-80.6088,https://en.wikipedia.org/wiki/Andy_Griffith_Museum,7374,Piedmont,25
+Q7241231,President James K. Polk Historic Site,museum,35.078127,-80.882395,https://en.wikipedia.org/wiki/President_James_K._Polk_Historic_Site,7248,Piedmont,26
+Q16984106,Richard Petty Museum,museum,35.890555555,-79.800833333,https://en.wikipedia.org/wiki/Richard_Petty_Museum,7114,Piedmont,27
+Q7242063,Prestonwood Country Club,sports club,35.79575,-78.83597222,https://en.wikipedia.org/wiki/Prestonwood_Country_Club,7070,Piedmont,28
+Q5655684,Hardaway Site,archaeological site,35.4105,-80.1147,https://en.wikipedia.org/wiki/Hardaway_Site,7016,Piedmont,29
+Q8068326,Zebulon B. Vance Birthplace,museum,35.7011,-82.4964,https://en.wikipedia.org/wiki/Zebulon_B._Vance_Birthplace,6964,Mountain,30
+Q4286368,Ocracoke Light,lighthouse,35.108972,-75.986056,https://en.wikipedia.org/wiki/Ocracoke_Light,6659,Coastal Plain,31
+Q4674272,Ackland Art Museum,museum,35.9124,-79.0544,https://en.wikipedia.org/wiki/Ackland_Art_Museum,5991,Piedmont,32
+Q14708028,Marbles Kids Museum,museum,35.7784,-78.6362,https://en.wikipedia.org/wiki/Marbles_Kids_Museum,5905,Piedmont,33
+Q25383153,Museum of the Cherokee People,museum,35.48451,-83.31642,https://en.wikipedia.org/wiki/Museum_of_the_Cherokee_People,5533,Mountain,34
+Q7559894,Somerset Place,historic site,35.7875,-76.405556,https://en.wikipedia.org/wiki/Somerset_Place,5519,Coastal Plain,35
+Q7339790,Roanoke Marshes Light,lighthouse,35.81111111,-75.70055556,https://en.wikipedia.org/wiki/Roanoke_Marshes_Light,4920,Coastal Plain,36
+Q7076608,Oconaluftee Indian Village,museum,35.4868,-83.3227,https://en.wikipedia.org/wiki/Oconaluftee_Indian_Village,4600,Mountain,37
+Q8050212,Yates Mill,museum,35.718578,-78.688342,https://en.wikipedia.org/wiki/Yates_Mill,4600,Piedmont,38
+Q5471747,Fort Neoheroka,archaeological site,35.4787,-77.7297,https://en.wikipedia.org/wiki/Fort_Neoheroka,4515,Coastal Plain,39
+Q5095920,Chicamacomico Life-Saving Station,museum,35.595,-75.465,https://en.wikipedia.org/wiki/Chicamacomico_Life-Saving_Station,4377,Coastal Plain,40
+Q7978319,Weatherspoon Art Museum,museum,36.06612,-79.80583,https://en.wikipedia.org/wiki/Weatherspoon_Art_Museum,3959,Piedmont,41
+Q5034791,Cape Fear Museum,museum,34.2359,-77.9384,https://en.wikipedia.org/wiki/Cape_Fear_Museum_of_History_and_Science,3841,Coastal Plain,42
+Q85845634,Charlotte Museum of History,museum,35.1355,-80.64,https://en.wikipedia.org/wiki/Charlotte_Museum_of_History,3796,Piedmont,43
+Q7897545,Unsung Founders Memorial,monument,35.913662,-79.051769,https://en.wikipedia.org/wiki/Unsung_Founders_Memorial,3694,Piedmont,44
+Q7242575,Price Creek Light,lighthouse,33.9358,-77.9897,https://en.wikipedia.org/wiki/Price_Creek_Light,3587,Coastal Plain,45
+Q5034789,Cape Fear Light,lighthouse,33.8927,-78.0348,https://en.wikipedia.org/wiki/Cape_Fear_Light,3530,Coastal Plain,46
+Q7990374,Weymouth Woods-Sandhills Nature Preserve,museum,35.1473,-79.3689,https://en.wikipedia.org/wiki/Weymouth_Woods-Sandhills_Nature_Preserve,3318,Piedmont,47
+Q5522235,Garden Creek site,archaeological site,35.5172,-82.8458,https://en.wikipedia.org/wiki/Garden_Creek_site,3152,Mountain,48
+Q5906838,Horton Grove,museum,36.126389,-78.839444,https://en.wikipedia.org/wiki/Horton_Grove,2978,Piedmont,49
+Q7286899,Raleigh City Museum,museum,35.7776,-78.6394,https://en.wikipedia.org/wiki/City_of_Raleigh_Museum,2798,Piedmont,50
+Q6941062,Museum of the Albemarle,museum,36.2964,-76.2196,https://en.wikipedia.org/wiki/Museum_of_the_Albemarle,2604,Coastal Plain,51
+Q6186402,Jesse Helms Center,museum,35.9761,-80.4336,https://en.wikipedia.org/wiki/Jesse_Helms_Center,2563,Piedmont,52
+Q5131533,Clemmons Educational State Forest,museum,35.6739,-78.489,https://en.wikipedia.org/wiki/Clemmons_Educational_State_Forest,2399,Coastal Plain,53
+Q16900428,Spikebuck Town Mound and Village Site,archaeological site,35.0461,-83.8089,https://en.wikipedia.org/wiki/Spikebuck_Town_Mound_and_Village_Site,2284,Mountain,54
+Q18151707,Hickory Museum of Art,museum,35.7361,-81.3341,https://en.wikipedia.org/wiki/Hickory_Museum_of_Art,2257,Piedmont,55
+Q21016128,Robinson Rock House Ruin and Plantation Site,archaeological site,35.27638889,-82.7175,https://en.wikipedia.org/wiki/Robinson_Rock_House_Ruin_and_Plantation_Site,2147,Mountain,56
+Q6864343,Mineral and Lapidary Museum,museum,35.3169,-82.4598,https://en.wikipedia.org/wiki/Mineral_and_Lapidary_Museum,2062,Mountain,57
+Q119872981,Rachel Carson North Carolina National Estuarine Research Reserve,nature reserve,34.702666666,-76.641333333,https://en.wikipedia.org/wiki/Rachel_Carson_North_Carolina_National_Estuarine_Research_Reserve,2038,Coastal Plain,58
+Q16949672,Averasboro Battlefield and Museum,museum,35.26611111,-78.67194444,https://en.wikipedia.org/wiki/Averasboro_Battlefield_and_Museum,1976,Piedmont,59
+Q5073021,Chapel Hill Museum,museum,35.9164,-79.0475,https://en.wikipedia.org/wiki/Chapel_Hill_Museum,1958,Piedmont,60
+Q5086080,Charlotte Nature Museum,museum,35.1881,-80.8437,https://en.wikipedia.org/wiki/Discovery_Place_Nature,1947,Piedmont,61
+Q5713264,Henderson County Courthouse,museum,35.314444,-82.460278,https://en.wikipedia.org/wiki/Henderson_County_Courthouse_(North_Carolina),1946,Mountain,62
+Q6924950,Mountain Gateway Museum and Heritage Center,museum,35.6276,-82.1808,https://en.wikipedia.org/wiki/Mountain_Gateway_Museum_and_Heritage_Center,1878,Mountain,63
+Q16899468,Rowan Museum,museum,35.6686,-80.4689,https://en.wikipedia.org/wiki/Rowan_Museum,1877,Piedmont,64
+Q19866554,Gilbert Town Historic District,archaeological site,35.4069,-81.9436,https://en.wikipedia.org/wiki/Gilbert_Town_Historic_District,1796,Mountain,65
+Q14707979,Imagination Station Science Museum,museum,35.7242,-77.9097,https://en.wikipedia.org/wiki/Imagination_Station_Science_Museum,1645,Coastal Plain,66
+Q5050955,Caswell Developmental Center,museum,35.2754,-77.6157,https://en.wikipedia.org/wiki/Caswell_Developmental_Center,1575,Coastal Plain,67
+Q5609251,Grimes Mill,museum,35.672778,-80.465556,"https://en.wikipedia.org/wiki/Grimes_Mill_(Salisbury,_North_Carolina)",1487,Piedmont,68
+Q5056628,Cedar Creek Gallery,museum,36.0825,-78.7475,https://en.wikipedia.org/wiki/Cedar_Creek_Gallery,1453,Piedmont,69
+Q4955169,Brady C. Jefcoat Museum,museum,36.4402,-77.1023,https://en.wikipedia.org/wiki/Brady_C._Jefcoat_Museum,1373,Coastal Plain,70
+Q20708643,Donnaha Site,archaeological site,36.23138889,-80.44138889,https://en.wikipedia.org/wiki/Donnaha_Site,1287,Piedmont,71
+Q21028302,Kings Mountain Historical Museum,museum,35.23916667,-81.34222222,https://en.wikipedia.org/wiki/Kings_Mountain_Historical_Museum,1254,Piedmont,72
+Q7083832,Old Davidson County Courthouse,museum,35.825,-80.253611,https://en.wikipedia.org/wiki/Old_Davidson_County_Courthouse_(North_Carolina),1148,Piedmont,73
+Q7959107,Wade Point Light,lighthouse,36.1561,-75.9778,https://en.wikipedia.org/wiki/Wade_Point_Light,1089,Coastal Plain,74
+Q19461359,Doerschuk Site,archaeological site,35.395833333,-80.07,https://en.wikipedia.org/wiki/Doerschuk_Site,995,Piedmont,75
+Q21016162,Savona Mill,historic site,35.24138889,-80.86722222,https://en.wikipedia.org/wiki/Savona_Mill,972,Piedmont,76
+Q24436369,New Winston Museum,museum,36.08552,-80.2443,https://en.wikipedia.org/wiki/New_Winston_Museum,925,Piedmont,77
+Q5751280,Hickory Ridge Homestead,museum,36.2097,-81.6698,https://en.wikipedia.org/wiki/Hickory_Ridge_Homestead,859,Mountain,78
+Q6940735,Museum of American Pottery,museum,36.07748,-78.74664,https://en.wikipedia.org/wiki/Museum_of_American_Pottery,810,Piedmont,79
+Q19461799,Fort Branch Site,archaeological site,35.9275,-77.1719,https://en.wikipedia.org/wiki/Fort_Branch_Site,749,Coastal Plain,80
+Q5684141,Haw River Town Museum,museum,36.08962,-79.36617,https://en.wikipedia.org/wiki/Haw_River_Town_Museum,573,Piedmont,81
+Q19987302,Newland Road Site,archaeological site,36.3706,-76.2864,https://en.wikipedia.org/wiki/Newland_Road_Site,555,Coastal Plain,82
+Q5180484,Cradle of Forestry in America,historic site,35.350230456,-82.77848811,https://en.wikipedia.org/wiki/Cradle_of_Forestry_in_America,554,Mountain,83
+Q137474295,Presidents North Carolina Gave the Nation,monument,35.78037,-78.63853,https://en.wikipedia.org/wiki/Presidents_North_Carolina_Gave_the_Nation,311,Piedmont,84
+Q4876168,Beam's Shell Service Station and Office,museum,35.379722,-81.38,https://en.wikipedia.org/wiki/Beam%27s_Shell_Service_Station_and_Office,0,Piedmont,85
+Q18158792,Thompson's Bromine and Arsenic Springs,archaeological site,36.5022,-81.3958,https://en.wikipedia.org/wiki/Thompson%27s_Bromine_and_Arsenic_Springs,0,Piedmont,86
+Q6405141,Kidzu Children's Museum,museum,35.9123,-79.0571,https://en.wikipedia.org/wiki/Kidzu_Children%27s_Museum,0,Piedmont,87
+Q105759534,Gregg Museum of Art & Design,museum,35.7855,-78.661294,https://en.wikipedia.org/wiki/Gregg_Museum_of_Art_%26_Design,0,Piedmont,88
+Q21015923,Black Mountain College Museum + Arts Center,museum,35.597301,-82.55216,https://en.wikipedia.org/wiki/Black_Mountain_College_Museum_%2B_Arts_Center,0,Mountain,89
+Q14708175,"St. Paul's Church, Edenton",archaeological site,36.0617,-76.6094,"https://en.wikipedia.org/wiki/St._Paul%27s_Church_(Edenton,_North_Carolina)",0,Coastal Plain,90
+Q28368792,Port O' Plymouth Museum,museum,35.86858,-76.74842,https://en.wikipedia.org/wiki/Port_O%27_Plymouth_Museum,0,Coastal Plain,91
+Q7591512,"St. Philip's Church, Brunswick Town",archaeological site,34.041277777,-77.946666666,"https://en.wikipedia.org/wiki/St._Philip%27s_Church_(Brunswick_Town,_North_Carolina)",0,Coastal Plain,92
