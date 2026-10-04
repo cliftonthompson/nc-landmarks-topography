@@ -6,12 +6,12 @@
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{float}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{amsmath,amssymb}
-\usepackage{float}
 
 % Command Palette Color Specifications
 \definecolor{CommandNavy}{HTML}{0D2A47}
@@ -146,25 +146,27 @@ The completed visualization catalogs 120 verified state landmarks. Table~\ref{ta
 \centering
 \small
 \color{CharcoalSlate}
+\setlength{\tabcolsep}{7pt}
+\renewcommand{\arraystretch}{1.12}
 \caption{Top North Carolina Landmarks by Annual Wikipedia Visibility}
 \label{tab:top_landmarks}
-\vspace{0.2cm}
-\begin{tabularx}{\textwidth}{r l l l r}
+\vspace{0.25cm}
+\begin{tabular}{r l l l r}
 \toprule
 \textbf{Rank} & \textbf{Landmark Name} & \textbf{Classification} & \textbf{Physiographic Region} & \textbf{Annual Views} \\
 \midrule
-1 & Tryon Palace & Archaeology / Historic & Coastal Plain & 23,380 \\
-2 & Billy Graham Library & Museum & Piedmont & 16,984 \\
-3 & Discovery Place & Museum & Piedmont & 14,210 \\
-4 & Joara Archaeological Site & Archaeology & Mountain & 13,330 \\
-5 & Currituck Beach Lighthouse & Lighthouse & Coastal Plain & 11,249 \\
-6 & Ava Gardner Museum & Museum & Coastal Plain & 10,231 \\
-7 & Graveyard of the Atlantic Museum & Museum & Coastal Plain & 8,147 \\
-8 & Hardaway Site & Archaeology & Piedmont & 7,016 \\
-9 & Ackland Art Museum & Museum & Piedmont & 5,991 \\
-10 & Fort Neoheroka & Archaeology & Coastal Plain & 4,515 \\
+1  & Tryon Palace                     & Archaeology / Historic & Coastal Plain & 23,380 \\
+2  & Billy Graham Library             & Museum                 & Piedmont      & 16,984 \\
+3  & Discovery Place                  & Museum                 & Piedmont      & 14,210 \\
+4  & Joara Archaeological Site        & Archaeology            & Mountain      & 13,330 \\
+5  & Currituck Beach Lighthouse       & Lighthouse             & Coastal Plain & 11,249 \\
+6  & Ava Gardner Museum               & Museum                 & Coastal Plain & 10,231 \\
+7  & Graveyard of the Atlantic Museum & Museum                 & Coastal Plain &  8,147 \\
+8  & Hardaway Site                    & Archaeology            & Piedmont      &  7,016 \\
+9  & Ackland Art Museum               & Museum                 & Piedmont      &  5,991 \\
+10 & Fort Neoheroka                   & Archaeology            & Coastal Plain &  4,515 \\
 \bottomrule
-\end{tabularx}
+\end{tabular}
 \end{table}
 
 \section{Conclusion}
