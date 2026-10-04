@@ -12,3 +12,9 @@ cache/
 
 .vs/
 .venv/
+
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
