@@ -11,6 +11,7 @@
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{amsmath,amssymb}
+\usepackage{float}
 
 % Command Palette Color Specifications
 \definecolor{CommandNavy}{HTML}{0D2A47}
@@ -58,8 +59,8 @@
     {\Large \itshape \color{CharcoalSlate} Modernizing the 100-County State History Scrapbook\\into a 3D Raised Topographic Model}\\[1.5cm]
     
     \textbf{\large Clifton N. Thompson}\\[0.2cm]
-    \textcolor{CharcoalSlate}{\normalsize Senior Facility Maintenance Program Coordinator \& CMMS Administrator}\\[0.1cm]
-    \textcolor{CadetGreen}{\normalsize Data Analytics Program, Southern New Hampshire University}\\[2.0cm]
+    \textcolor{CharcoalSlate}{\normalsize Independent Geospatial \& Data Analytics Researcher}\\[0.1cm]
+    \textcolor{CadetGreen}{\normalsize An Homage to North Carolina Heritage \& Cartography}\\[2.0cm]
 
     \begin{abstract}
     \noindent For generations of North Carolina public school students, the ``North Carolina Project'' was an exhaustive, tactile educational crucible. Bound within red three-ring vinyl binders, students cataloged all one hundred counties across the state's three physiographic divisions---the Mountains, the Piedmont, and the Coastal Plain. This paper documents the architecture, cartographic theory, and geospatial engineering required to transform that nostalgic schoolhouse artifact into a hardware-accelerated, true-scale 3D raised relief model. Combining authoritative US Census TIGER boundary geometries, AWS Terrarium Digital Elevation Models (DEMs), Wikidata SPARQL semantic triples, and Wikimedia pageview metrics, the resulting system isolates North Carolina as a physical, thermoformed gallery model rendered directly in WebGL.
@@ -141,7 +142,7 @@ A coastal marine buffer $\mathcal{S}_{\text{shelf}}$ is unioned to $\mathcal{B}_
 
 The completed visualization catalogs 120 verified state landmarks. Table~\ref{tab:top_landmarks} summarizes the top ten state landmarks by annual Wikipedia engagement, demonstrating the cultural weight of both mountain historic sites and coastal navigation sentinels.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \small
 \color{CharcoalSlate}
